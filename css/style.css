@@ -1,0 +1,185 @@
+/*
+---------------------
+Fonts
+---------------------
+ */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+/*
+---------------------
+Variables
+---------------------
+ */
+:root {
+  /* dark shades of primary color */
+  --clr-primary-1: #1d0f04;
+  --clr-primary-02: #472b15;
+  --clr-primary-3: #724f34;
+  --clr-primary-4: #9b785d;
+  --clr-primary-5: #ceaf97;
+  --clr-primary-6: #faefe7;
+  --clr-secondary-01: #d69b68;
+  --clr-secondary-2: #f1a664;
+  --clr-secondary-3: #fff6d0;
+  --clr-extra1-01: #a59b6d;
+  --clr-extra1-2: #706535;
+  --clr-extra1-3: #2c260d;
+  --clr-extra2-1: #f8e8ff;
+  --clr-extra2-2: #cabfce;
+  --clr-extra2-03: #8f8492;
+  --clr-extra2-4: #574a5a;
+  --clr-extra2-5: #211a22;
+  --ff-primary: Josefin Sans, sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+/*
+---------------------
+Global Styles
+---------------------
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background: var(--clr-primary-6);
+  color: var(--clr-primary-3);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img:not(.nav-logo) {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-secondary-01);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/* global classes */
+.btn {
+  text-transform: uppercase;
+  background: var(--clr-primary-02);
+
+  color: var(--clr-extra1-01);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  color: var(--clr-primary-1);
+  background: var(--clr-primary-3);
+}
+
+/*
+---------------------
+Navbar
+---------------------
+ */
+/*
+---------------------
+Hero
+---------------------
+ */
+/*
+---------------------
+About
+---------------------
+ */
+/*
+---------------------
+Services
+---------------------
+ */
+/*
+---------------------
+Featured
+---------------------
+ */
+/*
+---------------------
+Contact
+---------------------
+ */
+/*
+---------------------
+Gallery
+---------------------
+ */
+/*
+---------------------
+Footer
+---------------------
+ */
