@@ -23,7 +23,7 @@ Variables
   --clr-extra1-01: #a59b6d;
   --clr-extra1-2: #706535;
   --clr-extra1-3: #2c260d;
-  --clr-extra2-1: #f8e8ff;
+  --clr-extra2-1: #f2e3fa;
   --clr-extra2-2: #cabfce;
   --clr-extra2-03: #8f8492;
   --clr-extra2-4: #574a5a;
@@ -279,6 +279,64 @@ About
 Services
 ---------------------
  */
+.services {
+  background: var(--clr-extra2-1);
+}
+
+.service {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.service-icon {
+  background: var(--clr-primary-4);
+  color: var(--clr-primary-1);
+  padding: 0.5rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-text {
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .services-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .service {
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .service {
+    flex: 0 0 calc(33.33% - 1rem);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .service {
+    display: flex;
+    text-align: left;
+  }
+
+  .service-icon {
+    align-self: start;
+  }
+
+  .service-info {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
 /*
 ---------------------
 Featured
