@@ -339,9 +339,103 @@ Services
 }
 /*
 ---------------------
-Featured
+Featured burgers
 ---------------------
  */
+.burger-card {
+  transition: var(--transition);
+  background: var(--clr-extra2-2);
+  box-shadow: var(--light-shadow);
+  margin-bottom: 2rem;
+}
+
+.burger-card:hover {
+  box-shadow: var(--dark-shadow);
+  transform: scale(1.02);
+}
+
+.burger-img-container {
+  position: relative;
+}
+
+.burger-img {
+  height: 15rem;
+  object-fit: cover;
+}
+
+.burger-weekday {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: var(--clr-extra1-2);
+  margin-bottom: 0;
+  color: var(--clr-primary-1);
+  text-transform: capitalize;
+  padding: 0.25rem 0.5rem;
+}
+
+.burger-info {
+  padding: 1.25rem 1.5rem;
+}
+
+.burger-info p {
+  color: var(--clr-extra1-2);
+}
+.burger-title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.burger-title p,
+.burger-title h4 {
+  margin-bottom: 0.75rem;
+  line-height: 1.25rem;
+}
+
+.burger-title p {
+  color: var(--clr-extra2-4);
+}
+
+.burger-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.burger-footer i {
+  padding-right: 0.5rem;
+}
+
+.burger-footer p {
+  line-height: 0;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  color: var(--clr-primary-4);
+}
+
+.burger-btn {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .featured-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .burger-card {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .burger-card {
+    flex: 0 0 calc(33.33% - 2rem);
+  }
+}
 /*
 ---------------------
 Contact
