@@ -189,11 +189,13 @@ Hero
   justify-content: center;
   align-items: center;
 }
+
 .hero-banner {
   text-align: center;
   color: var(--clr-primary-1);
   padding: 0 3rem;
 }
+
 .hero-banner h1 {
   text-transform: uppercase;
 }
@@ -381,6 +383,7 @@ Featured burgers
 .burger-info p {
   color: var(--clr-extra1-2);
 }
+
 .burger-title {
   display: flex;
   justify-content: space-between;
@@ -512,6 +515,53 @@ Contact
 Gallery
 ---------------------
  */
+.gallery-img-container {
+  position: relative;
+}
+
+.gallery-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  color: var(--clr-extra2-1);
+  opacity: 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gallery-img {
+  height: 17rem;
+  object-fit: cover;
+  transition: var(--transition);
+  background: var(--clr-primary-02);
+}
+
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.5;
+}
+
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-img-container {
+    flex: 0 0 25%;
+  }
+}
+
 /*
 ---------------------
 Footer
