@@ -143,6 +143,35 @@ p {
   background: var(--clr-primary-3);
 }
 
+.section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title h2 {
+  text-transform: uppercase;
+}
+
+.section-title span {
+  color: var(--clr-primary-1);
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
 /*
 ---------------------
 Navbar
@@ -153,11 +182,98 @@ Navbar
 Hero
 ---------------------
  */
+.hero {
+  min-height: 100vh;
+  background: var(--clr-secondary-01);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-banner {
+  text-align: center;
+  color: var(--clr-primary-1);
+  padding: 0 3rem;
+}
+.hero-banner h1 {
+  text-transform: uppercase;
+}
+
+.hero-banner p {
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--clr-extra2-1);
+}
+
+.hero-btn {
+  padding: 0.9rem 1.6rem;
+  font-size: 1.25rem;
+  background: var(--clr-extra2-1);
+  color: var(--clr-primary-3);
+}
+
+.hero-btn:hover {
+  background: transparent;
+  color: var(--clr-extra2-1);
+  border-color: var(--clr-extra2-1);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(rgba(214, 155, 104, 0.4), rgba(0, 0, 0, 0.7)),
+      url('../images/hero.jpeg') center/cover no-repeat;
+  }
+
+  .hero-banner p {
+    max-width: 45rem;
+  }
+}
 /*
 ---------------------
 About
 ---------------------
  */
+/* section title and section-center add to globals */
+.about-img,
+.about-info {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .about-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about-img,
+  .about-info {
+    flex: 0 0 calc(50% - 2rem);
+    margin-bottom: 0;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .about-img::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.5rem solid var(--clr-primary-02);
+    box-sizing: border-box;
+    top: -1.5rem;
+    left: -1.5rem;
+  }
+
+  .about-img {
+    position: relative;
+  }
+
+  .about-photo {
+    position: relative;
+  }
+}
 /*
 ---------------------
 Services
