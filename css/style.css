@@ -182,7 +182,7 @@ Navbar
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--clr-primary-6);
+  background: var(--clr-secondary-3);
   box-shadow: var(--dark-shadow);
   z-index: 2;
 }
@@ -232,6 +232,13 @@ Navbar
   color: var(--clr-primary-1);
   background: var(--clr-extra1-2);
   padding-left: 2.25rem;
+}
+
+/* 280px hidden content of the nav-links */
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
 }
 
 .show-links {
